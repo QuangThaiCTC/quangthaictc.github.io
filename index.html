@@ -68,5 +68,16 @@
 </div>
 
 <script src="animation.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var allowedPages = ['https://quangthaictc.github.io/'];
+    var currentURL = window.location.href;
+
+    if (!allowedPages.includes(currentURL)) {
+        window.location.replace('https://quangthaictc.github.io/');
+    }
+});
+</script>
 </body>
 </html>
