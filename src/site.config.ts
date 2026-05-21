@@ -3,9 +3,9 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Ducker',
+  title: 'Quack Blog',
   /** Will be used in index page & copyright declaration */
-  author: 'Quang Thái',
+  author: 'Quang Thai',
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Stay humble',
   /** The default favicon for your Powhich should be a path to an image in the `public/` directory. */
@@ -14,10 +14,10 @@ export const theme: ThemeUserConfig = {
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'vi-VN',
-    attrs: 'vi-VN',
+    lang: 'en-US',
+    attrs: 'en-US',
     // Date locale
-    dateLocale: 'vi-VN',
+    dateLocale: 'en-US',
     dateOptions: {
       day: 'numeric',
       month: 'short',
@@ -48,8 +48,8 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Bài viết', link: '/blog' },
-      { title: 'Công cụ', link: '/tools' }
+      { title: 'Blog', link: '/blog' },
+      { title: 'Tools', link: '/tools' }
     ]
   },
 
@@ -67,7 +67,7 @@ export const theme: ThemeUserConfig = {
       },
       // Privacy Policy link
       {
-        title: 'Chính sách',
+        title: 'Privacy Policy',
         link: '/terms',
         pos: 2 // position set to 2 will be appended to copyright line
       }
@@ -162,22 +162,22 @@ export const integ: IntegrationUserConfig = {
 }
 
 export const terms: CardListData = {
-  title: 'Nội dung điều khoản',
+  title: 'Terms of Service',
   list: [
     {
-      title: 'Chính sách bảo mật',
+      title: 'Privacy Policy',
       link: '/terms/privacy-policy'
     },
     {
-      title: 'Điều khoản và Điều kiện',
+      title: 'Terms and Conditions',
       link: '/terms/terms-and-conditions'
     },
     {
-      title: 'Bản quyền',
+      title: 'Copyright',
       link: '/terms/copyright'
     },
     {
-      title: 'Tuyên bố miễn trừ trách nhiệm',
+      title: 'Disclaimer',
       link: '/terms/disclaimer'
     }
   ]

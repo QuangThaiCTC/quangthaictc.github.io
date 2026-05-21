@@ -3,8 +3,8 @@ layout: '@/layouts/IndividualPage.astro'
 
 title: 'Disclaimer'
 description: 'Last updated: 2024-11-26'
-language: 'VN'
+language: 'En'
 back: '/terms'
 ---
 
-Có thể khuyến nghị tạo ra các chính sách từ [PolicyMaker.io](https://policymaker.io).
+It may be recommended to generate policies from [PolicyMaker.io](https://policymaker.io).

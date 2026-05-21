@@ -6,26 +6,26 @@ import { integ } from '@/site-config'
 
 const meta = {
   description: 'Search relative posts of the whole blog',
-  title: 'Tìm kiếm'
+  title: 'Search'
 }
 ---
 
 <PageLayout {meta}>
-  <Button title='Trở về' href='/blog' variant='back' />
+  <Button title='Back' href='/blog' variant='back' />
   <main class='mt-6 lg:mt-10'>
     <div id='content-header' class='animate'>
-      <h1 class='mb-6 text-3xl font-medium'>Tìm kiếm</h1>
+      <h1 class='mb-6 text-3xl font-medium'>Search</h1>
     </div>
 
     <div id='content' class='animate'>
       {
         integ.pagefind ? (
           <>
-            <p>Nhập từ hoặc cụm từ để tìm kiếm bài viết.</p>
+            <p>Enter a word or phrase to search for blog posts.</p>
             <PFSearch />
           </>
         ) : (
-          <p>Trang tìm kiếm không hoạt động.</p>
+          <p>Search page is not available.</p>
         )
       }
     </div>

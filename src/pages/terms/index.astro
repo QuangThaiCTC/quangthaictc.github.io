@@ -5,23 +5,23 @@ import PageLayout from '@/layouts/BaseLayout.astro'
 import { integ, terms } from '@/site-config'
 
 const meta = {
-  title: 'Chính sách',
+  title: 'Terms of Service',
   description: 'Site policy documentation'
 }
 ---
 
 <PageLayout {meta}>
-  <Button title='Trở về' href='/' variant='back' />
+  <Button title='Back' href='/' variant='back' />
   <main class='mt-6 lg:mt-10'>
     <div id='content-header' class='animate'>
-      <h1 class='mb-6 text-3xl font-medium'>Chính sách</h1>
+      <h1 class='mb-6 text-3xl font-medium'>Terms of Service</h1>
     </div>
 
     <div id='content' class={cn('animate mt-8 max-w-none md:min-w-[45ch]', integ.typography.class)}>
-      <h2 class='text-xl font-medium'>Tài liệu</h2>
+      <h2 class='text-xl font-medium'>Terms of Service</h2>
       <CardList {...terms} />
-      <h2 class='text-xl font-medium'>Thông tin trợ giúp</h2>
-      <p>Bạn nên thêm file md vào thư mục này.</p>
+      <h2 class='text-xl font-medium'>Help Information</h2>
+      <p>You should add an md file to this directory.</p>
     </div>
   </main>
 </PageLayout>
