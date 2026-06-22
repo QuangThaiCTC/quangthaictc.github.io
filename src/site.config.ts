@@ -3,9 +3,9 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Quack Blog',
+  title: 'Rhizo Blog',
   /** Will be used in index page & copyright declaration */
-  author: 'Quang Thai',
+  author: 'Quang Thái',
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Stay humble',
   /** The default favicon for your Powhich should be a path to an image in the `public/` directory. */
@@ -14,10 +14,10 @@ export const theme: ThemeUserConfig = {
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en-US',
+    lang: 'vi-VN',
+    attrs: 'vi-VN',
     // Date locale
-    dateLocale: 'en-US',
+    dateLocale: 'vi-VN',
     dateOptions: {
       day: 'numeric',
       month: 'short',
@@ -48,10 +48,10 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Tools', link: '/tools' },
+      { title: 'Bài viết', link: '/blog' },
+      { title: 'Công cụ', link: '/tools' },
       { title: 'Cheat Sheet', link: '/cheat-sheet' },
-      { title: 'About', link: '/about' }
+      { title: 'Về mình', link: '/about' }
     ]
   },
 

@@ -13,24 +13,24 @@ const meta = {
 ---
 
 <PageLayout {meta}>
-  <Button title='Back' href='/' variant='back' />
+  <Button title='Trở lại' href='/' variant='back' />
   <main class='mt-6 lg:mt-10'>
     <div id='content-header' class='animate'>
       <h1 class='mb-6 text-3xl font-medium'>Cheat Sheet</h1>
     </div>
 
     <div id='content' class={cn('animate mt-8 max-w-none md:min-w-[45ch]', integ.typography.class)}>
-      <h2 class='text-xl font-medium'>Payload Notes</h2>
+      <h2 class='text-xl font-medium'>Danh mục</h2>
       <DocsContents title={false} />
 
-      <h2 class='text-xl font-medium'>Feedback</h2>
+      <h2 class='text-xl font-medium'>Phản hồi</h2>
       <p>
-        If you have any problems, you can send to <a
+        Nếu bạn có bất kỳ vấn đề nào, bạn có thể gửi về <a
           href='mailto:quangthaictc@gmail.com'
-          target='_blank'>my Email</a
+          target='_blank'>email của mình</a
         >.
       </p>
-      <h2 class='text-xl font-medium'>News Describe (Alpha)</h2>
+      <h2 class='text-xl font-medium'>RSS (Alpha)</h2>
       <p>
         <a href='/cheat-sheet/rss.xml' target='_blank'><Icon name='rss' /> </a>
       </p>

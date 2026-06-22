@@ -22,7 +22,7 @@ if (!images[imagePath])
   )
 ---
 
-<PageLayout meta={{ title: 'Home' }} highlightColor='#659EB9'>
+<PageLayout meta={{ title: 'Trang chủ' }} highlightColor='#659EB9'>
   <main class='flex w-full flex-col items-center'>
     <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
       <Image
@@ -37,7 +37,7 @@ if (!images[imagePath])
         <h1 class='text-3xl font-medium'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-2 gap-y-3'>
           <Svg src={import('@/assets/icons/vietnamese.svg?raw')}/>
-          <Label title='Can Tho City'>
+          <Label title='Thành phố Cần Thơ'>
           </Label>
           <Label
             title='Linkedin'
@@ -52,19 +52,17 @@ if (!images[imagePath])
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='About Me'>
-        <p class='text-muted-foreground'>Intern Pentester / Cyber Security Enthusiast</p>
+      <Section title='Mình là ai?'>
+        <p class='text-muted-foreground'>Pentester / Red Teamer</p>
         <p class='text-muted-foreground'>
-          Hi there! I’m a senior student majoring in Information Security.<br />
-          This blog serves as a technical log where I document my learning journey — from solving labs and CTFs to deep-diving into security research and exploitation techniques.<br />
-          <br />
-          Note: This site is currently undergoing maintenance. I will be uploading fresh content and technical write-ups as soon as the updates are complete.
+          Hi guys! Mình là Quang Thái. Một người đam mê An toàn thông tin và hiện đang theo đuổi hướng Offensive Security.<br />
+          Nơi này sẽ là nơi mà mình ghi chú lại những gì mình học được, cũng như một phần gián tiếp được chia sẻ kiến thức thông qua những gì mình tìm hiểu.<br />
         </p>
-        <Button title='View More' class='w-fit self-end' href='/about' variant='ahead' />
+        <Button title='Xem thêm' class='w-fit self-end' href='/about' variant='ahead' />
       </Section>
       {
         allPostsByDate.length > 0 && (
-          <Section title='Blog Posts'>
+          <Section title='Bài viết'>
             <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
               {allPostsByDate.map((p) => (
                 <li class='flex flex-col gap-x-2 sm:flex-row'>
@@ -72,7 +70,7 @@ if (!images[imagePath])
                 </li>
               ))}
             </ul>
-            <Button title='View More' class='w-fit self-end' href='/blog' variant='ahead' />
+            <Button title='Xem thêm' class='w-fit self-end' href='/blog' variant='ahead' />
           </Section>
         )
       }
@@ -106,11 +104,11 @@ if (!images[imagePath])
       />
     </Section> */
       }
-      <Section title='Education'>
+      <Section title='Học vấn'>
         <Card
           as='a'
-          heading='Ho Chi Minh City University of Foreign Languages - Information Technology'
-          subheading='Bachelor of Information Technology, specializing in Cybersecurity.'
+          heading='Trường Đại học Ngoại ngữ - Tin học TP. Hồ Chí Minh (HUFLIT)'
+          subheading='Chuyên ngành: An toàn thông tin'
           date=' 2022 - 2026'
           href='https://huflit.edu.vn/'
         >
